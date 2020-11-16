@@ -1,0 +1,10 @@
+.main-nav {
+  @include desktop{
+  width: 480px;
+  margin-left: 60px;
+  }
+}
+
+.main-nav__item {
+  padding: 0;
+}
