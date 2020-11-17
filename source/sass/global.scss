@@ -1,0 +1,43 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  @include style-reset;
+
+  width: 100%;
+  font-family: $font-family-main;
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: $font-weight;
+  color: $color-text;
+  background-color: $white;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  font-size: 0;
+  line-height: 0;
+}
+
+svg,
+picture {
+  font-size: 0;
+  line-height: 0;
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}

@@ -1,1 +1,1 @@
-Тестовое задание для United Traders
+Тестовое задание United Traders

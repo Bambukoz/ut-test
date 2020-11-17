@@ -1,0 +1,26 @@
+$desktop-width: 1440px;
+$tablet-width: 660px;
+
+$container-max-width: (
+  md: $tablet-width,
+  xl: $desktop-width
+);
+
+$padding-desktop: 190px;
+$padding-mobile: 20px;
+$retina-x2: 2dppx;
+
+$white: #ffffff;
+$black: #000000;
+$background-main: #19263f;
+$border-main: #85b657;
+$text-link: #1657ab;
+$text-link-hover: #ffff00;
+$text-link-active: #ff0000;
+
+$font-family-main: "PT Sans", "Arial", sans-serif;
+$font-family-title: "Open Sans", "Arial", sans-serif;
+$font-size: 16px;
+$line-height: 21px;
+$color-text: $black;
+$font-weight: 400;
