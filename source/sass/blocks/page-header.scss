@@ -1,0 +1,19 @@
+.page-header {
+  background-color: $background-main;
+  background-image: url("../../img/main-bg.png");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+
+  &__nav {
+    display: none;
+
+    &--nojs {
+      display: block;
+    }
+
+    &--active {
+      display: block;
+    }
+  }
+}

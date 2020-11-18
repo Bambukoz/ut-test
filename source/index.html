@@ -15,228 +15,237 @@
 </head>
 
 <body class="page">
-  <header class="page-header container-fluid">
-    <div class="page-header__wrapper row no-gutters">
-      <a class="logo col-9 col-xl-auto" href="#nowhere">
+  <header class="page-header container-fluid py-3">
+    <div class="page-header__top row justify-content-center">
+      <a class="logo col-9" href="#nowhere" target="_blank" rel="noopener noreferrer">
         <picture>
           <source type="image/webp" srcset="img/webp/logo.webp">
-          <img src="img/logo.png" width="250" height="50" alt="Company logo">
+          <img src="img/logo.png" width="249" height="49" alt="Company logo">
         </picture>
       </a>
-      <button class="toggle ml-auto col-2" type="button" aria-label="Show menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <nav class="main-nav col-12 col-xl-auto">
+      <button class="toggle toggle--nojs col-3" type="button" aria-label="Show menu"></button>
+    </div>
+    <div class="page-header__nav page-header__nav--nojs row">
+      <nav class="main-nav col-12 mt-4">
         <ul class="main-nav__list row">
-          <li class="main-nav__item col-12 col-xl-2">Products</li>
-          <li class="main-nav__item col-12 offset-xl-1 col-xl-3">News & Events</li>
-          <li class="main-nav__item col-12 offset-xl-1 col-xl-2">Support</li>
-          <li class="main-nav__item col-12 offset-xl-1 col-xl-2">Contacts</li>
+          <li class="main-nav__item offset-1 col-11 my-3">
+            <a class="main-nav__link" href="#nowhere" target="_blank" rel="noopener noreferrer">Products</a>
+          </li>
+          <li class="main-nav__item offset-1 col-11 my-3">
+            <a class="main-nav__link" href="#nowhere" target="_blank" rel="noopener noreferrer">News & Events</a>
+          </li>
+          <li class="main-nav__item offset-1 col-11 my-3">
+            <a class="main-nav__link" href="#nowhere" target="_blank" rel="noopener noreferrer">Support</a>
+          </li>
+          <li class="main-nav__item offset-1 col-11 my-3">
+            <a class="main-nav__link" href="#nowhere" target="_blank" rel="noopener noreferrer">Contacts</a>
+          </li>
         </ul>
       </nav>
-      <div class="user-nav col-xl-auto">
+      <div class="user-nav col-12">
         <ul class="user-nav__list row">
-          <li class="user-nav__item col-xl-3">Login</li>
-          <li class="user-nav__item col-xl-9">Buy Now</li>
+          <li class="user-nav__item offset-1 col-11 my-3">
+            <a class="user-nav__link" href="#nowhere" target="_blank" rel="noopener noreferrer">Login</a>
+          </li>
+          <li class="user-nav__item offset-1 col-11 my-3">
+            <a class="user-nav__link" href="#nowhere" target="_blank" rel="noopener noreferrer">Buy Now</a>
+          </li>
         </ul>
       </div>
     </div>
   </header>
-  <main class="page-main container">
-    <section class="lead row">
-      <h1 class="lead__title col-xl-12">WE SOLVE YOUR PROBLEMS</h1>
-      <p class="lead__text col-xl-12">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec accumsan velit. Ut gravida id sem id sodales. Aenean quis enim dui. Vestibulum ullamcorper vel urna quis congue.</p>
+
+  <main class="page-main container pt-3 pb-3">
+
+    <section class="lead row pt-3 pb-3">
+      <h1 class="lead__title col-12 mt-0 mb-0">We solve your problems</h1>
+      <p class="lead__text col-12 mt-4 mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc nec accumsan velit. Ut gravida id sem id sodales. Aenean quis enim dui. Vestibulum ullamcorper vel urna quis congue.</p>
     </section>
-    <section class="features">
-      <h2 class="features__title">Etiam ac nisl ac quam sodales scelerisque elementum quis purus.</h2>
-      <ul class="features__list">
-        <li class="features__item">
-          <a class="features__item-link" href="#nowhere" aria-label="Feature">
-            <picture>
-              <source type="image/webp" srcset="img/webp/icon_01.webp">
-              <img src="img/icon_01.png" width="52" height="64" alt="Microscope icon">
-            </picture>
-          </a>
-          <h3 class="features__item-title">Donec efficitur molestie</h3>
-          <p class="features__item-text">Nulla pretium nunc in nulla placerat, sit amet porttitor enim ullamcorper. Curabitur ex erat, euismod ac vestibulum vel, viverra non lorem.</p>
-          <a class="features__item-link" href="#nowhere" aria-label="Feature">Learn More</a>
+
+    <section class="features row pt-3 pb-3">
+      <h2 class="features__title col-12 mt-0 mb-0">Etiam ac nisl ac quam sodales scelerisque elementum quis purus.</h2>
+      <ul class="features__list col-12 mt-4">
+        <li class="features__item row mt-4 pt-3 justify-content-center">
+          <picture>
+            <source type="image/webp" srcset="img/webp/icon_01.webp">
+            <img src="img/icon_01.png" width="52" height="64" alt="Microscope icon">
+          </picture>
+          <h3 class="features__item-title col-8">Donec efficitur molestie</h3>
+          <p class="features__item-text mb-0">Nulla pretium nunc in nulla placerat, sit amet porttitor enim ullamcorper. Curabitur ex erat, euismod ac vestibulum vel, viverra non lorem.</p>
+          <a class="features__item-link mt-2" href="#nowhere" target="_blank" rel="noopener noreferrer" aria-label="Feature">Learn More</a>
         </li>
-        <li class="features__item">
+        <li class="features__item row mt-4 pt-3 justify-content-center">
           <picture>
             <source type="image/webp" srcset="img/webp/icon_02.webp">
             <img src="img/icon_02.png" width="62" height="64" alt="Building icon">
           </picture>
-          <h3 class="features__item-title">Mauris interdum venenatis</h3>
-          <p class="features__item-text">Vivamus cursus ante eu orci rutrum, vitae viverra ante dapibus. Vivamus porta molestie turpis, quis elementum nisi egestas eget.</p>
-          <a class="features__item-link" href="#nowhere" aria-label="Feature">Learn More</a>
+          <h3 class="features__item-title col-8">Mauris interdum venenatis</h3>
+          <p class="features__item-text mb-0">Vivamus cursus ante eu orci rutrum, vitae viverra ante dapibus. Vivamus porta molestie turpis, quis elementum nisi egestas eget.</p>
+          <a class="features__item-link mt-2" href="#nowhere" target="_blank" rel="noopener noreferrer" aria-label="Feature">Learn More</a>
         </li>
-        <li class="features__item">
+        <li class="features__item row mt-4 py-3 justify-content-center">
           <picture>
             <source type="image/webp" srcset="img/webp/icon_03.webp">
             <img src="img/icon_03.png" width="64" height="52" alt="House icon">
           </picture>
-          <h3 class="features__item-title">Cras sit amet</h3>
-          <p class="features__item-text">Fusce suscipit, ante at imperdiet vehicula, ex augue feugiat enim, sed faucibus sem tortor quis turpis. Mauris lacinia neque id augue efficitur, ut feugiat massa efficitur.</p>
-          <a class="features__item-link" href="#nowhere" aria-label="Feature">Learn More</a>
+          <h3 class="features__item-title col-8">Cras sit amet</h3>
+          <p class="features__item-text mb-0">Fusce suscipit, ante at imperdiet vehicula, ex augue feugiat enim, sed faucibus sem tortor quis turpis. Mauris lacinia neque id augue efficitur, ut feugiat massa efficitur.</p>
+          <a class="features__item-link mt-2" href="#nowhere" target="_blank" rel="noopener noreferrer" aria-label="Feature">Learn More</a>
         </li>
       </ul>
     </section>
-    <section class="products">
-      <h2 class="products__title">Etiam ac nisl ac quam sodales scelerisque elementum quis purus.</h2>
-      <p class="products__text">Integer bibendum turpis sit amet pretium commodo. Cras justo elit, dapibus at viverra non, dapibus vitae est. Morbi facilisis mi non iaculis porttitor. Phasellus a nibh a lacus dignissim pharetra. Vivamus ullamcorper finibus mauris, sit amet volutpat enim sollicitudin sed.</p>
-      <ul class="products__list">
-        <li class="products__item">
-          <a class="products__link" href="#nowhere" aria-label="Our product">
-            <picture>
-              <source type="image/webp" srcset="img/webp/icon_04.webp">
-              <img src="img/icon_04.png" width="64" height="64" alt="Search icon">
-            </picture>
-            <h3 class="products__title">Proin felis eros</h3>
-            <p class="products__text">Iverra sed eros id, eleifend maximus tortor</p>
-          </a>
+
+    <section class="products row pt-3 pb-3">
+      <h2 class="products__title col-12 mt-0 mb-0">Etiam ac nisl ac quam sodales scelerisque elementum quis purus.</h2>
+      <p class="products__text col-12 mt-3 mb-0">Integer bibendum turpis sit amet pretium commodo. Cras justo elit, dapibus at viverra non, dapibus vitae est. Morbi facilisis mi non iaculis porttitor. Phasellus a nibh a lacus dignissim pharetra. Vivamus ullamcorper finibus mauris, sit amet volutpat enim sollicitudin sed.</p>
+      <ul class="products__list col-12 mt-4 mb-4">
+        <li class="products__item row justify-content-center mt-4 pt-3">
+          <picture>
+            <source type="image/webp" srcset="img/webp/icon_04.webp">
+            <img src="img/icon_04.png" width="64" height="64" alt="Search icon">
+          </picture>
+          <h3 class="products__item-title col-8">Proin felis eros</h3>
+          <p class="products__item-text col-12">Iverra sed eros id, eleifend maximus tortor</p>
         </li>
-        <li class="products__item">
-          <a class="products__link" href="#nowhere" aria-label="Our product">
-            <picture>
-              <source type="image/webp" srcset="img/webp/icon_05.webp">
-              <img src="img/icon_05.png" width="58" height="64" alt="Timer icon">
-            </picture>
-            <h3 class="products__title">Suspendisse potenti</h3>
-            <p class="products__text">Vestibulum mi risus, aliquam vitae efficitur quis</p>
-          </a>
+        <li class="products__item row justify-content-center mt-4 pt-3">
+          <picture>
+            <source type="image/webp" srcset="img/webp/icon_05.webp">
+            <img src="img/icon_05.png" width="58" height="64" alt="Timer icon">
+          </picture>
+          <h3 class="products__item-title col-8">Suspendisse potenti</h3>
+          <p class="products__item-text col-12">Vestibulum mi risus, aliquam vitae efficitur quis</p>
         </li>
-        <li class="products__item">
-          <a class="products__link" href="#nowhere" aria-label="Our product">
-            <picture>
-              <source type="image/webp" srcset="img/webp/icon_06.webp">
-              <img src="img/icon_06.png" width="64" height="62" alt="Folder icon">
-            </picture>
-            <h3 class="products__title">Fusce pretium enim</h3>
-            <p class="products__text">Quisque at dui nunc. Curabitur sodales, turpis at luctus suscipit, nisl leo dignissim turpis</p>
-          </a>
+        <li class="products__item row justify-content-center mt-4 pt-3">
+          <picture>
+            <source type="image/webp" srcset="img/webp/icon_06.webp">
+            <img src="img/icon_06.png" width="64" height="62" alt="Folder icon">
+          </picture>
+          <h3 class="products__item-title col-8">Fusce pretium enim</h3>
+          <p class="products__item-text col-12">Quisque at dui nunc. Curabitur sodales, turpis at luctus suscipit, nisl leo dignissim turpis</p>
         </li>
-        <li class="products__item">
-          <a class="products__link" href="#nowhere" aria-label="Our product">
-            <picture>
-              <source type="image/webp" srcset="img/webp/icon_07.webp">
-              <img src="img/icon_07.png" width="91" height="59" alt="Safe icon">
-            </picture>
-            <h3 class="products__title">Vivamus urna eros</h3>
-            <p class="products__text">Fusce facilisis nunc a urna lacinia, nec sagittis felis efficitur. Phasellus commodo porttitor odio</p>
-          </a>
+        <li class="products__item row justify-content-center mt-4 pt-3">
+          <picture>
+            <source type="image/webp" srcset="img/webp/icon_07.webp">
+            <img src="img/icon_07.png" width="91" height="59" alt="Safe icon">
+          </picture>
+          <h3 class="products__item-title col-8">Vivamus urna eros</h3>
+          <p class="products__item-text col-12">Fusce facilisis nunc a urna lacinia, nec sagittis felis efficitur. Phasellus commodo porttitor odio</p>
         </li>
-        <li class="products__item">
-          <a class="products__link" href="#nowhere" aria-label="Our product">
-            <picture>
-              <source type="image/webp" srcset="img/webp/icon_08.webp">
-              <img src="img/icon_08.png" width="58" height="64" alt="Documents icon">
-            </picture>
-            <h3 class="products__title">Maecenas congue nisi</h3>
-            <p class="products__text">Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur vulputate <a class="products__text-link" href="#nowhere">arcu nisi</a></p>
-          </a>
+        <li class="products__item row justify-content-center mt-4 pt-3">
+          <picture>
+            <source type="image/webp" srcset="img/webp/icon_08.webp">
+            <img src="img/icon_08.png" width="58" height="64" alt="Documents icon">
+          </picture>
+          <h3 class="products__item-title col-8">Maecenas congue nisi</h3>
+          <p class="products__item-text col-12">Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur vulputate <a class="products__text-link" href="#nowhere" target="_blank" rel="noopener noreferrer">arcu nisi</a></p>
         </li>
-        <li class="products__item">
-          <a class="products__link" href="#nowhere" aria-label="Our product">
-            <picture>
-              <source type="image/webp" srcset="img/webp/icon_09.webp">
-              <img src="img/icon_09.png" width="64" height="48" alt="Network icon">
-            </picture>
-            <h3 class="products__title">Nullam purus velit</h3>
-            <p class="products__text">Praesent ac turpis sit amet ex euismod congue vitae sit amet risus</p>
-          </a>
+        <li class="products__item row justify-content-center mt-4 pt-3 pb-3">
+          <picture>
+            <source type="image/webp" srcset="img/webp/icon_09.webp">
+            <img src="img/icon_09.png" width="64" height="48" alt="Network icon">
+          </picture>
+          <h3 class="products__item-title col-8">Nullam purus velit</h3>
+          <p class="products__item-text col-12">Praesent ac turpis sit amet ex euismod congue vitae sit amet risus</p>
         </li>
       </ul>
-      <a class="products__view-btn" href="#nowhere">View All Our Products</a>
+      <a class="products__view-btn" href="#nowhere" target="_blank" rel="noopener noreferrer">View All Our Products</a>
     </section>
-    <section class="partners">
-      <p class="partners__text-top">Integer bibendum turpis sit amet pretium commodo. Cras justo elit, dapibus at viverra non, dapibus vitae est.</p>
-      <p class="partners__text-bottom">Fusce pretium enim sit amet elementum eleifend. Quisque at dui nunc. Curabitur sodales, turpis at luctus suscipit, nisl leo dignissim turpis, quis blandit justo nulla sed nisi. Vivamus urna eros, malesuada non massa sed, vestibulum maximus dui. Fusce facilisis nunc a urna lacinia, nec sagittis felis efficitur.
+
+    <section class="partners row pt-3 pb-3">
+      <p class="partners__text-top col-12 mt-4 mb-0">Integer bibendum turpis sit amet pretium commodo. Cras justo elit, dapibus at viverra non, dapibus vitae est.</p>
+      <p class="partners__text-bottom col-12 mt-3 mb-0">Fusce pretium enim sit amet elementum eleifend. Quisque at dui nunc. Curabitur sodales, turpis at luctus suscipit, nisl leo dignissim turpis, quis blandit justo nulla sed nisi. Vivamus urna eros, malesuada non massa sed, vestibulum maximus dui. Fusce facilisis nunc a urna lacinia, nec sagittis felis
+        efficitur.
         Phasellus commodo porttitor odio, eu commodo nisi vehicula ut. Maecenas congue nisi lorem, et maximus ante vestibulum eu. Vivamus non imperdiet ex.</p>
-      <ul class="partners__list">
-        <li class="partners__item">
-          <a class="partners__link" href="#nowhere">
+      <ul class="partners__list d-flex justify-content-center align-items-center flex-wrap col-12 mt-4 mb-0">
+        <li class="partners__item mx-2 my-2">
+          <a class="partners__link" href="#nowhere" target="_blank" rel="noopener noreferrer">
             <picture>
               <source type="image/webp" srcset="img/webp/image_01.webp">
               <img src="img/image_01.png" width="93" height="87" alt="Our partner 'A'">
             </picture>
           </a>
         </li>
-        <li class="partners__item">
-          <picture>
-            <a class="partners__link" href="#nowhere">
+        <li class="partners__item mx-2 my-2">
+          <a class="partners__link" href="#nowhere" target="_blank" rel="noopener noreferrer">
+            <picture>
               <source type="image/webp" srcset="img/webp/image_02.webp">
               <img src="img/image_02.png" width="94" height="95" alt="Our partner 'B'">
-            </a>
-          </picture>
+            </picture>
+          </a>
         </li>
-        <li class="partners__item">
-          <picture>
-            <a class="partners__link" href="#nowhere">
+        <li class="partners__item mx-2 my-2">
+          <a class="partners__link" href="#nowhere" target="_blank" rel="noopener noreferrer">
+            <picture>
               <source type="image/webp" srcset="img/webp/image_03.webp">
               <img src="img/image_03.png" width="94" height="105" alt="Our partner 'C'">
-            </a>
-          </picture>
+            </picture>
+          </a>
         </li>
-        <li class="partners__item">
-          <picture>
-            <a class="partners__link" href="#nowhere">
+        <li class="partners__item mx-2 my-2">
+          <a class="partners__link" href="#nowhere" target="_blank" rel="noopener noreferrer">
+            <picture>
               <source type="image/webp" srcset="img/webp/image_04.webp">
               <img src="img/image_04.png" width="102" height="99" alt="Our partner 'D'">
-            </a>
-          </picture>
+            </picture>
+          </a>
         </li>
-        <li class="partners__item">
-          <picture>
-            <a class="partners__link" href="#nowhere">
+        <li class="partners__item mx-2 my-2">
+          <a class="partners__link" href="#nowhere" target="_blank" rel="noopener noreferrer">
+            <picture>
               <source type="image/webp" srcset="img/webp/image_05.webp">
               <img src="img/image_05.png" width="190" height="45" alt="Our partner 'E'">
-            </a>
-          </picture>
+            </picture>
+          </a>
         </li>
       </ul>
     </section>
   </main>
-  <footer class="page-footer">
-    <ul class="footer-nav">
-      <li class="footer-nav__item">
-        <a class="footer-nav__link" href="#nowhere">Privacy policy</a>
-      </li>
-      <li class="footer-nav__item">
-        <a class="footer-nav__link" href="#nowhere">About us</a>
-      </li>
-      <li class="footer-nav__item">
-        <a class="footer-nav__link" href="#nowhere">Support</a>
-      </li>
-    </ul>
-    <ul class="social">
-      <li class="social__item">
-        <a class="social__link" href="#nowhere" aria-label="Facebook">
-          <svg width="16" height="31">
-            <use xlink:href="img/sprite.svg#Facebook"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link" href="#nowhere" aria-label="Twitter">
-          <svg width="30" height="31">
-            <use xlink:href="img/sprite.svg#Twitter"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="social__item">
-        <a class="social__link" href="#nowhere" aria-label="Instagram">
-          <svg width="32" height="32">
-            <use xlink:href="img/sprite.svg#Instagram"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
-    <div class="copyright">
-      <p class="copyright__text">Copright © 1999 - 2019</p>
+
+  <footer class="page-footer container-fluid pt-3 pb-3">
+    <div class="page-footer__top row">
+      <ul class="footer-nav col-12 d-flex flex-column align-items-center mt-0 mb-4">
+        <li class="footer-nav__item mt-4">
+          <a class="footer-nav__link" href="#nowhere" target="_blank" rel="noopener noreferrer">Privacy policy</a>
+        </li>
+        <li class="footer-nav__item mt-4">
+          <a class="footer-nav__link" href="#nowhere" target="_blank" rel="noopener noreferrer">About us</a>
+        </li>
+        <li class="footer-nav__item mt-4">
+          <a class="footer-nav__link" href="#nowhere" target="_blank" rel="noopener noreferrer">Support</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="page-footer__mid row justify-content-center">
+      <ul class="social col-12 d-flex justify-content-between">
+        <li class="social__item social__item--facebook">
+          <a class="social__link" href="#nowhere" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <svg width="16" height="31">
+              <use xlink:href="img/sprite.svg#Facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item social__item--twitter">
+          <a class="social__link" href="#nowhere" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+            <svg width="30" height="31">
+              <use xlink:href="img/sprite.svg#Twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item social__item--instagram">
+          <a class="social__link" href="#nowhere" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg width="32" height="32">
+              <use xlink:href="img/sprite.svg#Instagram"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="copyright row">
+      <p class="copyright__text col-12">Copright © 1999 - 2019</p>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

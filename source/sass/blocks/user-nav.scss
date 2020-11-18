@@ -1,8 +1,24 @@
-.user-nav {
-  width: 129px;
-  margin-left: 141px;
+.user-nav__list {
+  @include list-reset;
 }
 
 .user-nav__item {
-  text-align: end;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.user-nav__link {
+  color: $white;
+  cursor: pointer;
+
+  @include desktop {
+    &:hover,
+    &:focus {
+      color: $text-link-hover;
+    }
+
+    &:active {
+      color: $text-link-active;
+    }
+  }
 }

@@ -1,0 +1,27 @@
+.social {
+  max-width: 220px;
+}
+
+.social__item {
+  @include list-reset;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: $background-social;
+
+  &--facebook {
+    padding: 9px 16px;
+  }
+
+  &--twitter {
+    padding: 12px 10px;
+  }
+
+  &--instagram {
+    padding: 9px;
+  }
+}
+
+.social__link {
+  display: inline-block;
+}
