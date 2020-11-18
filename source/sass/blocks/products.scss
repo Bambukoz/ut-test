@@ -1,0 +1,20 @@
+.products__item {
+  @include list-reset;
+  border-top: 1px solid $border-black-10;
+
+  &:last-child {
+    border-bottom: 1px solid $border-black-10;
+  }
+
+  & img {
+    max-width: 100%;
+  }
+}
+
+.products__title {
+  text-align: center;
+}
+
+.products__text {
+  text-align: center;
+}

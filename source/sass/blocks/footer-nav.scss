@@ -1,0 +1,8 @@
+.footer-nav__item {
+  @include list-reset;
+}
+
+.footer-nav__link {
+  text-transform: uppercase;
+  color: $white;
+}

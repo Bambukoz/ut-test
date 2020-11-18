@@ -99,7 +99,7 @@ const jsMin = () => {
     //     min: `.min.js`
     //   }
     // }))
-    .pipe(gulp.dest(`source/js`))
+    // .pipe(gulp.dest(`source/js`))
     .pipe(sync.stream());
 };
 

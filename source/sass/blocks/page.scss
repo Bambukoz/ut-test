@@ -1,23 +1,3 @@
 .page {
   min-width: 320px;
 }
-
-.logo{
-  @include style-reset;
-  line-height: 0;
-  background-color: black;
-}
-
-.main-nav__list {
-  @include list-reset;
-  background-color: blue;
-}
-
-.user-nav__list {
-  @include list-reset;
-  background-color: rebeccapurple;
-}
-
-.user-nav__item {
-  @include style-reset;
-}
