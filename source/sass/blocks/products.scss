@@ -9,6 +9,12 @@
   & img {
     max-width: 100%;
   }
+
+  @include tablet {
+    &:nth-child(5){
+      border-bottom: 1px solid $border-black-10;
+    }
+  }
 }
 
 .products__title {
@@ -16,5 +22,9 @@
 }
 
 .products__text {
+  text-align: center;
+}
+
+.products__item-text{
   text-align: center;
 }

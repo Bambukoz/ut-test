@@ -1,14 +1,10 @@
-$desktop-width: 1440px;
-$tablet-width: 660px;
+$tablet-width: 768px;
+$desktop-width: 1200px;
 
 $container-max-width: (
   md: $tablet-width,
   xl: $desktop-width
 );
-
-$padding-desktop: 190px;
-$padding-mobile: 20px;
-$retina-x2: 2dppx;
 
 $white: #ffffff;
 $black: #000000;
