@@ -5,6 +5,10 @@
   background-position: top center;
   background-repeat: no-repeat;
 
+  &__top {
+    max-width: 720px;
+  }
+
   &__nav {
     display: none;
 
@@ -14,6 +18,7 @@
 
     &--active {
       display: block;
+      max-width: 720px;
     }
   }
 }
