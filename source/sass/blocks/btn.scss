@@ -38,6 +38,14 @@
   padding: 18px;
   margin-top: 40px;
 
+  &:focus,
+  &:hover {
+    box-shadow: $border-black-25;
+  }
+  &:active {
+    transform: translateY(2px);
+  }
+
   @include desktop {
     margin-top: 0;
   }

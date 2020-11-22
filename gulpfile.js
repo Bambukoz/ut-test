@@ -29,7 +29,7 @@ const css = () => {
     // .pipe(csso())
     // .pipe(rename(`style.min.css`))
     .pipe(sourcemap.write(`.`))
-    .pipe(gulp.dest(`build/css`))
+    .pipe(gulp.dest(`source/css`))
     .pipe(sync.stream());
 };
 
@@ -48,7 +48,7 @@ const images = () => {
       }),
       imageMin.svgo(),
     ]))
-    .pipe(gulp.dest(`build/img`));
+    .pipe(gulp.dest(`source/img`));
 };
 
 exports.images = images;
