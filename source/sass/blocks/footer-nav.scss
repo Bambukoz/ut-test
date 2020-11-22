@@ -1,8 +1,37 @@
+.footer-nav {
+  @include style-reset;
+
+  @include desktop {
+    margin: 0;
+  }
+}
+
 .footer-nav__item {
   @include list-reset;
+  margin-top: 10px;
+
+  @include tablet {
+    margin-top: 0;
+    margin-left: 25px;
+  }
+
+  &:first-child {
+    @include tablet {
+      margin-left: 0;
+    }
+  }
 }
 
 .footer-nav__link {
   text-transform: uppercase;
   color: $white;
+
+  &:hover,
+  &:focus {
+    color: $text-link-hover;
+  }
+
+  &:active {
+    color: $text-link-active;
+  }
 }

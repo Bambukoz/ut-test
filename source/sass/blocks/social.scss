@@ -1,5 +1,12 @@
 .social {
+  @include style-reset;
   max-width: 220px;
+
+  @include desktop {
+    max-width: 100%;
+    padding: 0 53px 0 61px;
+    margin: 0;
+  }
 }
 
 .social__item {
@@ -8,6 +15,7 @@
   height: 50px;
   border-radius: 50%;
   background-color: $background-social;
+  margin-left: 33px;
 
   &--facebook {
     padding: 9px 16px;
@@ -19,6 +27,19 @@
 
   &--instagram {
     padding: 9px;
+  }
+
+  &:first-child {
+    margin-left: 0;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $background-social-hover;
+  }
+
+  &:active {
+    background-color: $background-social-active;
   }
 }
 

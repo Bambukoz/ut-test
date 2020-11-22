@@ -1,11 +1,34 @@
+.lead {
+  padding: 15px;
+}
+
 .lead__title {
   font-family: $font-family-title;
-  font-size: 42px;
+  font-size: 34px;
   line-height: 52px;
   font-weight: 300;
   text-align: center;
+  text-transform: uppercase;
+  margin: 0;
+
+  @include desktop {
+    max-width: 410px;
+    font-size: 48px;
+    line-height: 58px;
+    color: $white;
+  }
 }
 
 .lead__text {
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0;
+
+  @include desktop {
+    max-width: 889px;
+    font-size: 18px;
+    line-height: 23px;
+    color: $white;
+    margin-top: 80px;
+  }
 }
