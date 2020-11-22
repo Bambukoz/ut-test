@@ -126,6 +126,15 @@
   text-align: center;
   color: $text-link;
 
+  &:hover,
+  &:focus {
+    color: $black;
+  }
+
+  &:active {
+    color: $background-main;
+  }
+
   @include desktop {
     font-size: 14px;
     line-height: 18px;

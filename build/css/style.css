@@ -2986,6 +2986,10 @@ picture {
   cursor: pointer;
   padding: 18px;
   margin-top: 40px; }
+  .products__view-btn:focus, .products__view-btn:hover {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25); }
+  .products__view-btn:active {
+    transform: translateY(2px); }
   @media (min-width: 1200px) {
     .products__view-btn {
       margin-top: 0; } }
@@ -3101,6 +3105,10 @@ picture {
 .features__item-link {
   text-align: center;
   color: #1657ab; }
+  .features__item-link:hover, .features__item-link:focus {
+    color: #000000; }
+  .features__item-link:active {
+    color: #19263f; }
   @media (min-width: 1200px) {
     .features__item-link {
       font-size: 14px;
