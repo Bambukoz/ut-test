@@ -1,24 +1,57 @@
 .page-header {
   background-color: $background-main;
-  background-image: url("../../img/main-bg.png");
+  background-image: url("../img/main-bg.png");
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
 
+  @include desktop {
+    min-height: 500px;
+  }
+
+  &__wrapper {
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    @include desktop {
+      padding-top: 23px;
+      padding-left: 190px;
+      padding-right: 188px;
+    }
+  }
+
   &__top {
-    max-width: 720px;
+    line-height: 0;
+
+    @include desktop {
+      max-width: 1120px;
+    }
   }
 
   &__nav {
     display: none;
 
+    @include desktop {
+      display: flex;
+      margin-left: 61px;
+    }
+
     &--nojs {
-      display: block;
+      display: flex;
+      max-width: 720px;
+
+      @include desktop {
+        max-width: 1120px;
+      }
     }
 
     &--active {
-      display: block;
+      display: flex;
       max-width: 720px;
+
+      @include desktop {
+        max-width: 1120px;
+      }
     }
   }
 }

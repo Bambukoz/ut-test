@@ -29,7 +29,7 @@ const css = () => {
     // .pipe(csso())
     // .pipe(rename(`style.min.css`))
     .pipe(sourcemap.write(`.`))
-    .pipe(gulp.dest(`source/css`))
+    .pipe(gulp.dest(`build/css`))
     .pipe(sync.stream());
 };
 
@@ -48,7 +48,7 @@ const images = () => {
       }),
       imageMin.svgo(),
     ]))
-    .pipe(gulp.dest(`source/img`));
+    .pipe(gulp.dest(`build/img`));
 };
 
 exports.images = images;
@@ -84,7 +84,7 @@ const html = () => {
     //   removeComments: true,
     //   collapseWhitespace: true
     // }))
-    // .pipe(gulp.dest(`build`))
+    .pipe(gulp.dest(`build`))
     .pipe(sync.stream());
 };
 
@@ -99,7 +99,7 @@ const jsMin = () => {
     //     min: `.min.js`
     //   }
     // }))
-    // .pipe(gulp.dest(`source/js`))
+    .pipe(gulp.dest(`build/js`))
     .pipe(sync.stream());
 };
 
@@ -133,7 +133,7 @@ exports.clean = clean;
 const server = (done) => {
   sync.init({
     server: {
-      baseDir: `source`
+      baseDir: `build`
     },
     port: 8080,
     cors: true,

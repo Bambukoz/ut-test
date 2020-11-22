@@ -1,10 +1,33 @@
+.user-nav {
+  @include desktop {
+    min-width: 130px;
+    margin-left: 40px;
+  }
+}
+
 .user-nav__list {
-  @include list-reset;
+  @include style-reset;
+  padding-left: 5%;
+
+  @include desktop {
+    padding: 0;
+  }
 }
 
 .user-nav__item {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  list-style: none;
+  padding: 20px;
+
+  @include desktop {
+    padding: 0;
+    margin-left: 30px;
+  }
+
+  &:first-child {
+    @include desktop {
+      margin-left: 0;
+    }
+  }
 }
 
 .user-nav__link {

@@ -1,15 +1,54 @@
 .main-nav__list {
-  @include list-reset;
+  @include style-reset;
+  padding-left: 5%;
+  margin-top: 15px;
+
+  @include desktop {
+    min-width: 460px;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .main-nav__item {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  list-style: none;
+  padding: 20px;
+
+  @include desktop {
+    padding: 0;
+    margin-left: 61px;
+  }
+
+  &:first-child {
+    @include desktop {
+      margin-left: 0;
+    }
+  }
+
+  &:nth-child(2) {
+    @include desktop {
+      margin-left: 44px;
+    }
+  }
 }
 
 .main-nav__link {
+  display: block;
   color: $white;
   cursor: pointer;
+
+  &--active::after {
+    @include desktop {
+      content: "";
+      display: inline-block;
+      width: 12px;
+      height: 14px;
+      background-image: url("../../img/arrow.svg");
+      background-repeat: no-repeat;
+      background-position: bottom;
+      margin-left: 5px;
+    }
+  }
 
   @include desktop {
     &:hover,

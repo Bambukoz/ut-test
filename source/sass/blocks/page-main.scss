@@ -1,0 +1,8 @@
+.page-main {
+  padding: 17px;
+
+  @include desktop {
+    margin-top: -375px;
+    padding-bottom: 89px;
+  }
+}

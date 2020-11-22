@@ -1,7 +1,17 @@
+.copyright {
+  margin-top: 20px;
+
+  @include desktop {
+    margin-top: 28px;
+    margin-bottom: 0;
+  }
+}
+
 .copyright__text {
   font-weight: 700;
   font-size: 15px;
   line-height: 19px;
   color: $white;
   text-align: center;
+  margin: 0;
 }
